@@ -16,7 +16,7 @@ body {
 
 .pause {
     --size: 100px;
-    background: linear-gradient(45deg, rgb(60, 32, 218), rgb(18, 8, 151));
+    background: linear-gradient(45deg, rgb(233, 192, 8), rgb(167, 156, 5));
 }
 
 .pause:hover {
@@ -93,6 +93,32 @@ body {
     --size: 70px;
     background: darksalmon;
     animation: jupiter 7.5s infinite linear;
+}
+
+.sun::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 140%;
+    height: 10px;
+    border: 3px solid beige;
+    border-top: 0;
+    border-radius: 50%;
+    transform: translate(-50%, -50%) rotate(30deg);
+}
+
+.mars::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 140%;
+    height: 10px;
+    border: 2px solid beige;
+    border-top: 0;
+    border-radius: 50%;
+    transform: translate(-50%, -50%) rotate(30deg);
 }
 
 .saturn {
