@@ -25,7 +25,7 @@ body {
 
 .sun {
     --size: 100px;
-    background: linear-gradient(45deg, rgb(60, 32, 218), rgb(64, 57, 163));
+    background: linear-gradient(45deg, rgb(32, 44, 218), rgb(24, 28, 85));
     animation: sun 12s infinite linear;
 }
 
@@ -43,7 +43,7 @@ body {
 }
 
 .sun:hover {
-    animation-play-state: paused; cursor: pointer; background: linear-gradient(45deg, rgb(32, 44, 218), rgb(24, 28, 85));
+    animation-play-state: paused; cursor: pointer; background: linear-gradient(145deg, rgb(32, 44, 218), rgb(6, 14, 116));
 }
 
 .desc {
@@ -62,6 +62,19 @@ body {
 
 .sun:hover .desc{
     opacity: 1;
+}
+
+.sun::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 140%;
+    height: 10px;
+    border: 3px solid beige;
+    border-top: 0;
+    border-radius: 50%;
+    transform: translate(-50%, -50%) rotate(30deg);
 }
 
 
@@ -83,29 +96,31 @@ body {
     animation: earth 6.5s infinite linear;
 }
 
+/* mars */
 .mars {
-    --size: 30px;
-    background: crimson;
+    --size: 90px;
+    background: linear-gradient(45deg, rgb(104, 17, 5), rgb(150, 109, 47));
     animation: mars 7s infinite linear;
 }
-
-.jupiter {
-    --size: 70px;
-    background: darksalmon;
-    animation: jupiter 7.5s infinite linear;
-}
-
-.sun::after {
-    content: '';
+.mars::before {
+    content: 'suns_aracana';
+    text-align: center;
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 0%;
+    left: 70%;
     width: 140%;
     height: 10px;
-    border: 3px solid beige;
     border-top: 0;
     border-radius: 50%;
-    transform: translate(-50%, -50%) rotate(30deg);
+    color: white;
+}
+
+.mars:hover {
+    animation-play-state: paused; cursor: pointer; background: linear-gradient(45deg, rgb(117, 20, 7), rgb(133, 81, 4));
+}
+
+.mars:hover .desc{
+    opacity: 1;
 }
 
 .mars::after {
@@ -121,9 +136,52 @@ body {
     transform: translate(-50%, -50%) rotate(30deg);
 }
 
+/* jupiter - 거닐다 */
+.jupiter {
+    --size: 100px;
+    background: linear-gradient(125deg, rgb(95, 4, 241), rgb(15, 78, 224));
+    animation: jupiter 7.5s infinite linear;
+}
+
+.jupiter::before {
+    content: 'forbetterdays';
+    text-align: center;
+    position: absolute;
+    top: 0%;
+    left: 70%;
+    width: 140%;
+    height: 10px;
+    border-top: 0;
+    border-radius: 50%;
+    color: white;
+}
+
+.jupiter:hover {
+    animation-play-state: paused; cursor: pointer; background: linear-gradient(125deg, rgb(60, 8, 201), rgb(53, 163, 226));
+}
+
+.jupiter:hover .desc{
+    opacity: 1;
+}
+
+.jupiter::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 140%;
+    height: 10px;
+    border: 6px double rgb(173, 28, 137);
+    border-top: 0;
+    border-radius: 50%;
+    transform: translate(-50%, -50%) rotate(30deg);
+}
+
+
+
 .saturn {
-    --size: 40px;
-    background: peru;
+    --size: 80px;
+    background: #57168a;
     animation: saturn 8s infinite linear;
 }
 
@@ -134,7 +192,7 @@ body {
     left: 50%;
     width: 140%;
     height: 10px;
-    border: 2px solid beige;
+    border: 2px solid rgb(77 65 151);
     border-top: 0;
     border-radius: 50%;
     transform: translate(-50%, -50%) rotate(30deg);
