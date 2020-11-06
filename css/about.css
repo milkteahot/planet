@@ -35,9 +35,8 @@ body {
     box-shadow: 2px 2px 3px 0px #7f7676;
     color: #50556d;
     cursor: pointer;
-    
     transition: box-shadow 200ms ease-in-out;
-
+    border-radius: 50px;
     background: rgba(247, 244, 244, 0.911);
     color: #50556d;
 }
