@@ -3,6 +3,17 @@ body {
   background: linear-gradient(125deg, #5685ea, #ec9a9a, #ce7d7d00);
 }
 
+.home-link {
+  float: left;
+  color: white;
+  cursor: pointer;
+  font-size: 1.5rem;
+  margin: 1rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
 .container {
   margin: 2rem;
   height: 36vh;
@@ -27,40 +38,40 @@ body {
 }
 
 .form-button {
-    padding: 1rem;
-    font-size: 1.2rem;
-    border-radius: 5px;
-    border: none;
-    font-weight: 800;
-    box-shadow: 2px 2px 3px 0px #7f7676;
-    color: #50556d;
-    cursor: pointer;
-    transition: box-shadow 200ms ease-in-out;
-    border-radius: 50px;
-    background: rgba(247, 244, 244, 0.911);
-    color: #50556d;
+  padding: 1rem;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  border: none;
+  font-weight: 800;
+  box-shadow: 2px 2px 3px 0px #7f7676;
+  color: #50556d;
+  cursor: pointer;
+  transition: box-shadow 200ms ease-in-out;
+  border-radius: 50px;
+  background: rgba(247, 244, 244, 0.911);
+  color: #50556d;
 }
 
 .form-button:hover {
-    background: #e6b9b93d;
-    color: white;
+  background: #e6b9b93d;
+  color: white;
 }
 
 .form-button:active,
 .form-button:focus {
-    outline: none;
+  outline: none;
 }
 
 .section02-title {
-    margin-left: 1rem;
-    color: white;
-    font-size: 1.5rem;
-    margin-bottom: 0px;
+  margin-left: 1rem;
+  color: white;
+  font-size: 1.5rem;
+  margin-bottom: 0px;
 }
 
 .section02-container {
-    display: grid;
-    justify-content: center;
+  display: grid;
+  justify-content: center;
 }
 
 .container-sm {
@@ -109,9 +120,9 @@ body {
 }
 
 @media screen and (max-width: 768px) {
-    .container {
-        height: 50vh;
-    }
+  .container {
+    height: 50vh;
+  }
   .container p {
     text-align: center;
   }
